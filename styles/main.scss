@@ -1,0 +1,21 @@
+.hero {
+  @apply flex justify-around mt-8
+}
+.spotify {
+  @apply flex flex-row space-x-2
+}
+
+@media (max-width: 768px) {
+  .hero {
+    @apply flex flex-col-reverse items-center mt-8 
+  }
+  .avatar-distance {
+    @apply mt-2	 
+  } 
+  .spotify {
+    @apply flex flex-col items-center	
+  }
+  .text-alignment {
+    @apply text-center
+  }
+}
