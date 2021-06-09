@@ -10,7 +10,7 @@ export default ({
 	  month: Number(process.env.BIRTHMONTH), 
 	  year: Number(process.env.BIRTHYEAR), 
 	  gmt: "GMT+3:00", 
-	  time: Number(process.env.BIRTHTIME)
+	  time: process.env.BIRTHTIME
 	},
 	description: "Hello 👋, I'm a student. I'm {age} years old now and I have some small projects. I spend more time from classes on my projects and cycling.",
 	favouriteArtists: [
