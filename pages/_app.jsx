@@ -1,7 +1,7 @@
 import { ThemeProvider } from "next-themes";
 import { ToastContainer, Zoom } from "react-toastify";
 
-import "../styles/main.scss";
+import "../public/main.scss";
 import "tailwindcss/tailwind.css";
 import 'react-toastify/dist/ReactToastify.css';
 
