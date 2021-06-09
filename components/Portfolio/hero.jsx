@@ -18,10 +18,10 @@ function calculateAge(birthday) {
   });
 	
   const now = new Date().getTime();
-  const _birthday = new Date(`${birthday.day} ${months[birthday.month]}, ${birthday.year} ${birthday.clock} ${birthday.gmt}`).getTime();
+  const _birthday = new Date(`${birthday.day} ${months[birthday.month]}, ${birthday.year} ${birthday.time} ${birthday.gmt}`).getTime();
   const diff = now - _birthday;
   
-  return Math.floor((now - _birthday) / (86400000 * 365.25));
+  return Math.floor((now - _birthday) / 31557600000);
 }
 
 function Hero({ name="none", position="none", description="none", birthday={}, avatar="https://avatars.githubusercontent.com/u/43222255?v=4", discord_user={} }) {
