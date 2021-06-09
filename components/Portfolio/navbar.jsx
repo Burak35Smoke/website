@@ -36,7 +36,7 @@ function Navbar({ title="404", description="Not found!" }) {
               </Link>
             ) : (
               <button className={`py-2 px-3 rounded-md hover:bg-[#d9d8d8] dark:hover:bg-[#260d50] block border-b-2 border-transparent`} onClick={(() => {
-                if (route.isMaintinance) {
+                if (route.isMaintenance) {
                   toast.info("Bu sayfanın yapımı sürmekte.");
 
                   return;

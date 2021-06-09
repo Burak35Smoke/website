@@ -1,31 +1,51 @@
 export default ({
-  sitename: "", // Site name.
-  hostname: "", // Your site URL.
+  sitename: "SherlockYigit",
+  hostname: "website-yigitsh.vercel.app",
   personalInfo: {
-    discordID: "", // If you have a Discord account write your account ID.
-    name: "", // Write your name
-    position: "", // Write what you're doing.
-    birthday: {
-      day: 8, 
-      month: 6,
-      year: 2021, 
-      gmt: "GMT+3:00", // Greenwich Time Zone your birthplace 
-      clock: "22:30" // Your birth time.
-    }, 
-    description: "Hello I'm {age} years old.", // Description about yourself.
-    favouriteArtists: [
+	discordID: "304347029046558721",
+    name: "Yiğit",
+	position: "Full Stack Developer",
+	birthday: {
+      day: Number(process.env.BIRTHDAY), 
+	  month: Number(process.env.BIRTHMONTH), 
+	  year: Number(process.env.BIRTHYEAR), 
+	  gmt: "GMT+3:00", 
+	  time: Number(process.env.BIRTHTIME)
+	},
+	description: "Hello 👋, I'm a student. I'm {age} years old now and I have some small projects. I spend more time from classes on my projects and cycling.",
+	favouriteArtists: [
       { 
-        name: "Gin Wigmore", 
-	    image: "/artists/ginwigmore.webp" 
-      }
-    ]
+	    name: "Duman", 
+		image: "/artists/duman.webp" 
+	  }, 
+      { 
+	    name: "Model", 
+		image: "/artists/model.webp" 
+	  },
+      { 
+	    name: "Adamlar", 
+		image: "/artists/adamlar.webp" 
+	  },
+      { 
+	    name: "Gin Wigmore", 
+		image: "/artists/ginwigmore.webp" 
+	  },
+      { 
+	    name: "Dorothy", 
+		image: "/artists/dorothy.webp" 
+	  },
+      { 
+	    name: "Ece Seçkin", 
+		image: "/artists/ece_seckin.webp" 
+	  }
+	]
   },
   routes: [
     { 
-      isMaintenance: true, 
-      name: "Blog", 
-      to: "/blog", 
-      description: "" 
-    }
+	  isMaintenance: true, 
+	  name: "Blog", 
+	  to: "/blog", 
+	  description: "" 
+	}
   ]
 });
