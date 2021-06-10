@@ -2,23 +2,23 @@ import Image from "next/image";
 import { FaSpotify } from "react-icons/fa";
 
 function calculateAge(birthday) {
-  const months = ({
-    1: "January",
-	2: "Februay",
-	3: "March",
-	4: "April",
-	5: "May",
-	6: "June",
-	7: "July",
-	8: "August",
-	9: "Sempember",
-	10: "October",
-	11: "November",
-	12: "December"
-  });
+  const months = [
+    "January",
+    "February",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
 	
   const now = new Date().getTime();
-  const _birthday = new Date(`${birthday.day} ${months[birthday.month]}, ${birthday.year} ${birthday.time} ${birthday.gmt}`).getTime();
+  const _birthday = new Date(`${birthday.day} ${months[Math.floor(Number(birthday.month) - 1)]},
+  ${birthday.year} ${birthday.time} ${birthday.gmt}`).getTime();
   const diff = now - _birthday;
   
   return Math.floor((now - _birthday) / 31557600000);

@@ -8,9 +8,9 @@ export default ({
     name: "Yiğit",
     position: "Full Stack Developer",
     birthday: {
-      day: Number(process.env.BIRTHDAY), 
-      month: Number(process.env.BIRTHMONTH), 
-      year: Number(process.env.BIRTHYEAR), 
+      day: process.env.BIRTHDAY, 
+      month: process.env.BIRTHMONTH, 
+      year: process.env.BIRTHYEAR, 
       gmt: "GMT+3:00", 
       time: process.env.BIRTHTIME
     },

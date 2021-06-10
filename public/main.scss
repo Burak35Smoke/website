@@ -4,8 +4,11 @@
 .spotify {
   @apply flex flex-row space-x-2
 }
+.fav-artist-card-wh {
+  @apply w-96 h-64
+}
 
-@media (max-width: 768px) {
+@media (max-width: 924px) {
   .hero {
     @apply flex flex-col-reverse items-center mt-8 
   }
@@ -14,6 +17,9 @@
   } 
   .spotify {
     @apply flex flex-col items-center	
+  }
+  .fav-artist-card-wh {
+    @apply w-80 h-48
   }
   .text-alignment {
     @apply text-center
