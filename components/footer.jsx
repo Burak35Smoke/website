@@ -2,8 +2,8 @@ import { IoHeartSharp } from 'react-icons/io5';
 
 function Footer({ socialMedias }) {
   return (
-    <footer className="flex justify-around mt-4">
-      <div className="flex flex-row">
+    <footer className="flex flex-wrap justify-around mt-2 lg:px-16 px-6 lg:py-0 py-2">
+      <div className="flex space-x-1 mt-2">
         <p className="font-medium text-base"> 
 	  This website was developed by <a className="text-[#38d7b1]" href="https://github.com/SherlockYigit">Yiğit</a> with
 	</p>
