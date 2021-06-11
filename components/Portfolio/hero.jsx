@@ -31,7 +31,7 @@ function Hero({ name="none", position="none", description="none", birthday={}, a
   else if (statusColor === "idle") statusColor = "ring-yellow-400";
   else if (statusColor === "dnd") statusColor = "ring-red-600";
   else if (statusColor === "offline") statusColor = "ring-gray-600";
-  
+
   return (
     <div className="hero">
 	  <div className="max-w-2xl space-y-1 lg:mt-4">

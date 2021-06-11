@@ -16,7 +16,7 @@ class Index extends Component {
   }
   componentDidMount() {
     (typeof window !== "undefined" && (() => {
-      this.ws = new WebSocket("wss://api.lanyard.rest/socket?compression=zlib");
+      this.ws = new WebSocket("wss://api.lanyard.rest/socket");
    	
       this.ws.onopen = () => {
 	this.ws.send(JSON.stringify({
