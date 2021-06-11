@@ -8,20 +8,19 @@ import 'react-toastify/dist/ReactToastify.css';
 function MyApp({Component, pageProps}) {
   return (
     <ThemeProvider attribute="class" defaultTheme={"light"} themes={["light", "dark"]}>
-	  <ToastContainer
+      <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
-	    transition={Zoom}
+	transition={Zoom}
         newestOnTop
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
         draggable
-        pauseOnHover
-       />
-	  <Component {...pageProps} />  
-	</ThemeProvider>
+        pauseOnHover />
+      <Component {...pageProps} />  
+    </ThemeProvider>
   )
 }
 

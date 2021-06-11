@@ -34,32 +34,29 @@ function Hero({ name="none", position="none", description="none", birthday={}, a
 
   return (
     <div className="hero">
-	  <div className="max-w-2xl space-y-1 lg:mt-4">
+      <div className="max-w-2xl space-y-1 lg:mt-4">
         <h1 className="avatar-distance font-semibold text-2xl sm:text-3xl md:text-4xl text-alignment">{name}</h1>
-	    <h2 className="font-semibold text-[#38d7b1] text-xl sm:text-2xl md:text-3xl text-alignment">
-	      {position}
-	    </h2>
-	    {!discord_user?.listening_to_spotify ? "" : (
-         <div className="spotify">
-	       <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
-	       <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
-             <a href={`https://open.spotify.com/track/${discord_user?.spotify?.track_id}`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}</a>
-	       </h3>
-	     </div>   
-	    )}
+	<h2 className="font-semibold text-[#38d7b1] text-xl sm:text-2xl md:text-3xl text-alignment">{position}</h2>
+      {!discord_user?.listening_to_spotify ? "" : (
+        <div className="spotify">
+	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
+	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
+            <a href={`https://open.spotify.com/track/${discord_user?.spotify?.track_id}`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}</a>
+	  </h3>
+        </div>   
+      )}
         <p className="text-md sm:text-lg md:text-xl text-alignment">{description.replace("{age}", calculateAge(birthday))}</p>
       </div>
-	  
-	  <div className={`relative rounded-full h-60 w-60 ring-4 ${statusColor}`}>
+      <div className={`relative rounded-full h-60 w-60 ring-4 ${statusColor}`}>
         <div className="h-60 w-60 rounded-full bg-gray-600 animate-pulse"/>
-	    <Image 
+        <Image 
           src={avatar}
           alt="Profile IMG"
-	      layout="fill"
+	  layout="fill"
           objectFit="cover"
-	      className={`rounded-full h-60 w-60`} />	
-	  </div>
-	</div>
+	  className={`rounded-full h-60 w-60`} />	
+      </div>
+    </div>
   );
 }
 export default Hero;
