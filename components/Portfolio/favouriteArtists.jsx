@@ -32,7 +32,7 @@ function FavArtists({ artists=[] }) {
               alt={artist.name}
 	      layout="fill"
               objectFit="cover"
-	      className="rounded-lg"
+	      className="w-full h-full rounded-lg"
 	      id={`img-${index}`} />	
 
 	    <div className="absolute inset-x-0 bottom-0 flex flex-row items-end h-full w-full">
