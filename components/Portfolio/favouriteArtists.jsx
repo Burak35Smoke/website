@@ -9,7 +9,7 @@ function FavArtists({ artists=[] }) {
       img.onload = () => {
         let skeleton = document.getElementById(`skeletonIMG-${index}`);
 
-	skeleton.classList.add("hidden");
+	skeleton.parentNode.removeChild(skeleton);
 
 	return true;
       }
@@ -23,7 +23,7 @@ function FavArtists({ artists=[] }) {
       <div className="flex flex-col space-y-4 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-4">
       {artists.map((artist, index) => (
         <motion.div 
-	  className="shadow-xl bg-[#f0efef] rounded-lg m-auto fav-artist-card-wh relative"
+	  className="shadow-xl bg-[#f0efef] border-2 border-[#d9d8d9] dark:border-[#260d50] rounded-lg m-auto fav-artist-card-wh relative"
 	  whileHover={{ scale: 1.1 }} 
 	  whileTap={{ scale: 0.9 }} key={index}>
           <div id={`skeletonIMG-${index}`} className="rounded-lg fav-artist-card-wh bg-gray-600 animate-pulse" />
@@ -40,10 +40,10 @@ function FavArtists({ artists=[] }) {
                 <h3 className="text-base font-bold leading-5 uppercase">{artist.name}</h3>
               </div>
             </div>
-	      </motion.div>
-	    ))}  
-	  </div>
-	</div>
+	</motion.div>
+      ))}  
+      </div>
+    </div>
   );
 }
 export default FavArtists;
