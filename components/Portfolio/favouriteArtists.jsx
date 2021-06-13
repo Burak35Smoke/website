@@ -5,6 +5,7 @@ function FavArtists({ artists=[] }) {
   (typeof window !== "undefined" && (
     artists.forEach((artist, index) => {
       let img = document.getElementById(`img-${index}`);
+      if (!img) return;
 
       img.onload = () => {
         let skeleton = document.getElementById(`skeletonIMG-${index}`);

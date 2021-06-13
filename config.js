@@ -58,7 +58,7 @@ export default ({
   },
   routes: [
     { 
-      isMaintenance: true, 
+      isMaintenance: false, 
       name: "Blog", 
       to: "/blog", 
       description: "Personal blog." 
