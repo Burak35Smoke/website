@@ -1,11 +1,11 @@
 import { FaGithub, FaSpotify, FaDiscord } from "react-icons/fa";
 
 export default ({
-  sitename: "SherlockYigit",
-  hostname: "website-yigitsh.vercel.app",
+  sitename: "SassteR",
+  hostname: "https://website-6mji0dd9o-burak35smoke.vercel.app/",
   personalInfo: {
-    discordID: "304347029046558721",
-    name: "Yiğit",
+    discordID: "852601841870569552",
+    name: "Burak",
     position: "Full Stack Developer",
     birthday: {
       day: process.env.BIRTHDAY, 
@@ -43,15 +43,15 @@ export default ({
     ],
     socialMedias: [
       {
-        to: "https://github.com/SherlockYigit",
+        to: "https://github.com/Burak35Smoke",
 	icon: FaGithub
       },
       {
-        to: "https://open.spotify.com/user/m0jtc4mufe1ypfs6if1ab7dzl",
+        to: "https://open.spotify.com/user/f20i3xdrw1gnfv9omkshhvhr1",
 	icon: FaSpotify
       },
       {
-        to: "https://discord.com/channels/@me/304347029046558721",
+        to: "https://discord.com/channels/@me/852601841870569552",
 	icon: FaDiscord 
       }
     ]
