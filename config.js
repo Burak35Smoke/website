@@ -14,31 +14,31 @@ export default ({
       gmt: "GMT+3:00", 
       time: process.env.BIRTHTIME
     },
-    description: "Hello 👋, I'm a student. I'm {age} years old now and I have some small projects. I spend more time from classes on my projects and cycling.",
+    description: "Hello 👋, I'm a student. I'm 15 years old now and I have some small projects. I spend more time from classes on my projects and cycling.",
     favouriteArtists: [
       { 
-	name: "Duman", 
-	image: "/artists/duman.webp" 
+	name: "Rope", 
+	image: "/artists/rope.webp" 
       }, 
       { 
-	name: "Model", 
-	image: "/artists/model.webp" 
+	name: "ViceArnold", 
+	image: "/artists/vice.webp" 
       },
       { 
-	name: "Adamlar", 
-	image: "/artists/adamlar.webp" 
+	name: "Joker", 
+	image: "/artists/joker.webp" 
       },
       { 
-	name: "Gin Wigmore", 
-	image: "/artists/ginwigmore.webp" 
+	name: "Agoni", 
+	image: "/artists/agoni.webp" 
       },
       { 
-	name: "Dorothy", 
-	image: "/artists/dorothy.webp" 
+	name: "Taladro", 
+	image: "/artists/taladro.webp" 
       },
       { 
-	name: "Ece Seçkin", 
-	image: "/artists/ece_seckin.webp" 
+	name: "Perdenin Ardındakiler", 
+	image: "/artists/perdeninardindakiler.webp" 
       }
     ],
     socialMedias: [
