@@ -62,7 +62,7 @@ class Index extends Component {
 	    description={Config.personalInfo.description}
 	    discord_user={this.state.discord_user}
 	    birthday={Config.personalInfo.birthday}
-	    avatar={"/avatar.webp"}/>  
+	    avatar={"/logo.gif"}/>  
 	  <FavouriteArtists artists={Config.personalInfo.favouriteArtists} />
 	  <Footer socialMedias={Config.personalInfo.socialMedias}/>
 	</motion.div>
