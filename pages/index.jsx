@@ -54,7 +54,7 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <Navbar title={`Home - ${Config.hostname}`} description="SherlockYigit's portfolio home page." siteName={Config.sitename} />
+        <Navbar title={`Home - ${Config.hostname}`} description="SassteR's portfolio home page." siteName={Config.sitename} />
         <motion.div animate={{ y: -10, opacity: 100 }} initial={{ y: 0, opacity: 0 }}>
           <Hero 
             name={Config.personalInfo.name}
