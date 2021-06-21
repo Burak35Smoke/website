@@ -1,8 +1,8 @@
-import { FaGithub, FaSpotify, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaSpotify, FaDiscord, FaInstagram } from "react-icons/fa";
 
 export default ({
   sitename: "SassteR",
-  hostname: "https://website-6mji0dd9o-burak35smoke.vercel.app/",
+  hostname: "https://sasster.vercel.app/",
   personalInfo: {
     discordID: "852601841870569552",
     name: "Burak",
@@ -53,6 +53,10 @@ export default ({
       {
         to: "https://discord.com/channels/@me/852601841870569552",
 	icon: FaDiscord 
+      },
+      {
+        to: "https://instagram.com/sasster.edits",
+	icon: FaInstagram 
       }
     ]
   },
