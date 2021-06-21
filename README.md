@@ -8,6 +8,6 @@ Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?reposito
 
 ## Demo images
 ### Light mode
-![Light Mode](./demo/lightmode.png)
+![Light Mode](./screenshots/lightmode.png)
 ### Dark mode
-![Dark mode](./demo/darkmode.png)
+![Dark mode](./screenshots/darkmode.png)
