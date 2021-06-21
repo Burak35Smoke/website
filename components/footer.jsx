@@ -5,7 +5,7 @@ function Footer({ socialMedias }) {
     <footer className="flex flex-wrap justify-around mt-2 lg:px-16 px-6 lg:py-0 py-2">
       <div className="flex space-x-1 mt-2">
         <p className="font-medium text-base"> 
-	  This website was developed by <a className="text-[#38d7b1]" href="https://github.com/SherlockYigit">Yiğit</a> with
+	  This website was developed by <a className="text-[#38d7b1]" href="https://github.com/SherlockYigit">Yiğit</a> and <a className="text-[#38d7b1]" href="https://github.com/Burak35Smoke">SassteR</a> with
 	</p>
 	<IoHeartSharp className="mt-1 font-medium text-base text-red-600"/>
       </div>
