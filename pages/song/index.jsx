@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { motion } from "framer-motion";
 import Navbar from "../../components/Song/navbar.jsx";
 import Footer from "../../components/footer.jsx";
 import Spotify from "../../components/Song/spotify.jsx";
