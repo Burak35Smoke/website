@@ -8,7 +8,7 @@ import ThemeChangeSwitch from "../themeChangeSwitch.jsx";
 import Config from "../../config.js";
 
 function Navbar({ title="404", description="Not found!" }) { 
-  function changeRoute() {
+ function changeRoute() {
     const newRoute = Router.pathname.match(/\/song/);
     
     if (newRoute[0] === newRoute.input) {
@@ -16,7 +16,6 @@ function Navbar({ title="404", description="Not found!" }) {
     } else {
       Router.push("/song");
     }
-
     return true;
   }
 
