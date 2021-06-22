@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaSpotify } from "react-icons/fa";
 import Config from "../../config.js";
 
-function Hero({ name="none", position="none", description="none", avatar="/logo.gif", discord_user={} }) {
+function Spotify({ name="none", position="none", description="none", avatar="/logo.gif", discord_user={} }) {
   let statusColor = discord_user?.discord_status;
   if (!statusColor) statusColor = "ring-gray-600";
   else if (statusColor === "online") statusColor = "ring-green-400";
@@ -26,4 +26,4 @@ function Hero({ name="none", position="none", description="none", avatar="/logo.
       </div>
   );
 }
-export default Hero;
+export default Spotify;
