@@ -9,6 +9,7 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
   else if (statusColor === "idle") statusColor = "ring-yellow-400";
   else if (statusColor === "dnd") statusColor = "ring-red-600";
   else if (statusColor === "offline") statusColor = "ring-gray-600";
+  const now = new Date.now();
   return (
     <div className="hero">
       <div className="max-w-2xl space-y-1 lg:mt-4">
@@ -18,7 +19,7 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
         <div className="spotify">
 	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
 	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
-		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | 0:00 - {discord_user?.spotify?.timestamps?.end}</a>
+		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | {now - discord_user?.spotify?.timestamps?.start} - {discord_user?.spotify?.timestamps?.end}</a>
 	 	 </h3>
        	  </div>   
       )}
