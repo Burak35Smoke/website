@@ -9,8 +9,17 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
   else if (statusColor === "idle") statusColor = "ring-yellow-400";
   else if (statusColor === "dnd") statusColor = "ring-red-600";
   else if (statusColor === "offline") statusColor = "ring-gray-600";
-  const now = new Date.now();
-  return (
+var end = discord_user.spotify.timestamps.end;
+var date = new Date(end * 1000);
+// Hours part from the timestamp
+var end_hours = date.getHours();
+// Minutes part from the timestamp
+var end_minutes = "0" + date.getMinutes();
+// Seconds part from the timestamp
+var end_seconds = "0" + date.getSeconds();
+
+// Will display time in 10:30:23 format
+var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);  return (
     <div className="hero">
       <div className="max-w-2xl space-y-1 lg:mt-4">
         <h1 className="avatar-distance font-semibold text-2xl sm:text-3xl md:text-4xl text-alignment">{name}</h1>
@@ -19,7 +28,7 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
         <div className="spotify">
 	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
 	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
-		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | {now - discord_user?.spotify?.timestamps?.start} - {discord_user?.spotify?.timestamps?.end}</a>
+		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | {now - discord_user?.spotify?.timestamps?.start} - {end_minutes}:{end_seconds}</a>
 	 	 </h3>
        	  </div>   
       )}
