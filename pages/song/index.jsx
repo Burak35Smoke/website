@@ -1,3 +1,4 @@
+import { Component } from "react";
 import Navbar from "../../components/Song/navbar.jsx";
 import Footer from "../../components/footer.jsx";
 import Spotify from "../../components/Song/spotify.jsx";
