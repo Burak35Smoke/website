@@ -1,0 +1,29 @@
+import Image from "next/image";
+import { FaSpotify } from "react-icons/fa";
+import Config from "../../config.js";
+
+function Hero({ name="none", position="none", description="none", avatar="/logo.gif", discord_user={} }) {
+  let statusColor = discord_user?.discord_status;
+  if (!statusColor) statusColor = "ring-gray-600";
+  else if (statusColor === "online") statusColor = "ring-green-400";
+  else if (statusColor === "idle") statusColor = "ring-yellow-400";
+  else if (statusColor === "dnd") statusColor = "ring-red-600";
+  else if (statusColor === "offline") statusColor = "ring-gray-600";
+  const now = new Date.now()
+  return (
+    <div className="hero">
+      <div className="max-w-2xl space-y-1 lg:mt-4">
+        <h1 className="avatar-distance font-semibold text-2xl sm:text-3xl md:text-4xl text-alignment">{name}</h1>
+	<h2 className="font-semibold text-[#38d7b1] text-xl sm:text-2xl md:text-3xl text-alignment">{position}</h2>
+      {!discord_user?.listening_to_spotify ? "" : (
+        <div className="spotify">
+	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
+	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
+		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | {now - discord_user?.spotify?.timestamps?.start} - {discord_user?.spotify?.timestamps?.end}</a>
+	  </h3>
+        </div>   
+      )}
+      </div>
+  );
+}
+export default Hero;
