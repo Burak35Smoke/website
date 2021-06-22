@@ -23,6 +23,7 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
       )}
 	      </div>
 	</div>
+
 <div className={`relative rounded-full h-60 w-60 ring-4 ${statusColor}`}>
         <div className="h-60 w-60 rounded-full bg-gray-600 animate-pulse"/>
         <Image 
@@ -31,6 +32,7 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
 	  layout="fill"
           objectFit="cover"
 	  className={`rounded-full h-60 w-60`} />	
+	      </div>
       </div>
   );
 }
