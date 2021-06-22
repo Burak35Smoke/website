@@ -42,7 +42,7 @@ function Hero({ name="none", position="none", description="none", birthday={}, a
         <div className="spotify">
 	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
 	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
-		<a href={`[Config.hostname]/song`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}</a>
+		<a href={`{Config.hostname}/song`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}</a>
 	  </h3>
         </div>   
       )}
