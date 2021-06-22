@@ -9,7 +9,7 @@ import Config from "../../config.js";
 
 function Navbar({ title="404", description="Not found!" }) { 
   function changeRoute() {
-    const newRoute = Router.pathname.match(/\/blog/);
+    const newRoute = Router.pathname.match(/\/song/);
     
     if (newRoute[0] === newRoute.input) {
       Router.push("/");
