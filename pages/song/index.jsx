@@ -1,5 +1,6 @@
-import Navbar from "../../components/Blog/navbar.jsx";
+import Navbar from "../../components/Song/navbar.jsx";
 import Footer from "../../components/footer.jsx";
+import Hero from "../components/Portfolio/hero.jsx";
 import Config from "../../config.js";
 
 function Index() {
