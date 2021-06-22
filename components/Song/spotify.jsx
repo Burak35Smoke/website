@@ -9,9 +9,6 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
   else if (statusColor === "idle") statusColor = "ring-yellow-400";
   else if (statusColor === "dnd") statusColor = "ring-red-600";
   else if (statusColor === "offline") statusColor = "ring-gray-600";
-
-// Will display time in 10:30:23 format
-var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);  return (
     <div className="hero">
       <div className="max-w-2xl space-y-1 lg:mt-4">
         <h1 className="avatar-distance font-semibold text-2xl sm:text-3xl md:text-4xl text-alignment">{name}</h1>
