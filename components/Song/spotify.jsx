@@ -18,7 +18,7 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
         <div className="spotify">
 	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
 	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
-		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | {Date().now() - discord_user?.spotify?.timestamps?.start} - {discord_user?.spotify?.timestamps?.end}</a>
+		<a>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song} | 0:00 - {discord_user?.spotify?.timestamps?.end}</a>
 	 	 </h3>
        	  </div>   
       )}
