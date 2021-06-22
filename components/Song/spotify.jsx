@@ -32,7 +32,6 @@ function Spotify({ name="none", position="none", description="none", avatar="/lo
           objectFit="cover"
 	  className={`rounded-full h-60 w-60`} />	
       </div>
-    </div>
   );
 }
 export default Spotify;
