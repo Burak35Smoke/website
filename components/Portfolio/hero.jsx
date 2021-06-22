@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaSpotify } from "react-icons/fa";
+import Config from "../../config.js";
 
 function calculateAge(birthday) {
   const months = [
@@ -41,7 +42,8 @@ function Hero({ name="none", position="none", description="none", birthday={}, a
         <div className="spotify">
 	  <FaSpotify className="mt-0.5 font-semibold w-6 h-6 text-green-400 text-alignment" />
 	  <h3 className="font-semibold text-lg sm:text-md md:text-lg text-green-400 text-alignment">
-            <a href={`https://open.spotify.com/track/${discord_user?.spotify?.track_id}`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}</a>
+<!--            <a href={`https://open.spotify.com/track/${discord_user?.spotify?.track_id}`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}</a>-->
+		<a href={`[Config.hostname]/song`}>{discord_user?.spotify?.artist} - {discord_user?.spotify?.song}
 	  </h3>
         </div>   
       )}
